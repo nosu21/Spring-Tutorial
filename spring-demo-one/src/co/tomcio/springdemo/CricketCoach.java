@@ -3,6 +3,9 @@ package co.tomcio.springdemo;
 public class CricketCoach implements  Coach {
 
 	private FortuneService fortuneService;
+	private String emailAdress;
+	private String team;
+	
 	// create non-arg constructor
 	public CricketCoach() {
 		System.out.println("CricketCoach: inside no-arg constructor");
