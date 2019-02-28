@@ -1,7 +1,7 @@
 package co.tomcio.springdemo;
 
 public class TrackCoach implements Coach {
-	
+	//commit test
 	private FortuneService fortuneService;
 	
 	public TrackCoach(FortuneService theFortuneService) {
