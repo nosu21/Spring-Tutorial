@@ -3,8 +3,10 @@ package co.tomcio.springdemo;
 public class CricketCoach implements  Coach {
 
 	private FortuneService fortuneService;
+	//fields
 	private String emailAdress;
 	private String team;
+	private int numberOfMembers;
 	
 	// create non-arg constructor
 	public CricketCoach() {
@@ -27,6 +29,43 @@ public class CricketCoach implements  Coach {
 	public String getDailyFortune() {
 		return fortuneService.getFortune();
 	}
+
+
+	public String getEmailAdress() {
+		return emailAdress;
+	}
+
+
+	public void setEmailAdress(String emailAdress) {
+		System.out.println("CricketCoach: inside setter method - setEmailAdress");
+		this.emailAdress = emailAdress;
+	}
+
+
+	public String getTeam() {
+		return team;
+	}
+
+
+	public void setTeam(String team) {
+		System.out.println("CricketCoach: inside setter method - setTeam");
+		this.team = team;
+	}
+
+
+	public int getNumberOfMembers() {
+		return numberOfMembers;
+	}
+
+
+	public void setNumberOfMembers(int numberOfMembers) {
+		System.out.println("CricketCoach: inside setter method - setMembers");
+		this.numberOfMembers = numberOfMembers;
+	}
+	
+	
+	
+	
 
 	
 
